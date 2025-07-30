@@ -24,3 +24,45 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 外層包住每一組 slider，固定寬度為螢幕 100%，最大寬限制避免撐爆 */
+.slider-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 單一 slider 區塊 */
+.slider-wrapper {
+  width: 100%;
+}
+
+/* 每一張 slide 的容器 */
+.slide-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 133%; /* 3:4 比例（高度/寬度 = 0.75）=> 100/0.75 = 133% */
+  overflow: hidden;
+}
+
+/* 圖片包覆的區塊（讓 Image 元件 fill） */
+.image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* 加上父層來增加 specificity，讓它蓋過 slick 預設 */
+.slider-wrapper .slick-dots {
+  position: absolute !important;
+  bottom: 10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 10 !important;
+}
+
+
