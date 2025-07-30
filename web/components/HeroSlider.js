@@ -15,15 +15,6 @@ const sliderData = [
     { id: 2, image: "/image/clothes1.jpg", alt: "Slider 2" },
     { id: 3, image: "/image/clothes2.jpg", alt: "Slider 3" },
   ],
-  [
-    { id: 4, image: "/image/pants1.jpg", alt: "Slider 4" },
-    { id: 5, image: "/image/pants2.jpg", alt: "Slider 5" },
-    { id: 6, image: "/image/pants3.jpg", alt: "Slider 6" },
-  ],
-  [
-    { id: 7, image: "/image/acc1.jpg", alt: "Slider 7" },
-    { id: 8, image: "/image/acc2.jpg", alt: "Slider 8" },
-  ]
 ]
 
 // slick 設定
@@ -52,6 +43,7 @@ export default function HeroSlider() {
                     alt={slide.alt}
                     fill
                     style={{ objectFit: "cover" }}
+
                     priority
                   />
                 </div>
