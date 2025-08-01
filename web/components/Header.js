@@ -24,7 +24,7 @@ export default function Header() {
              width={60}
             height={60}
             />
-         <span className="text-lg font-semibold">V2 STUDIO</span>
+         <span className="text-lg font-semibold">V2 Studio</span>
         </div>
         
         

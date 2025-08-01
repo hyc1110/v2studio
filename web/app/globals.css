@@ -20,9 +20,9 @@
 }
 
 body {
+  font-family: 'Inter', 'NotoSansTC', sans-serif;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* 外層包住每一組 slider，固定寬度為螢幕 100%，最大寬限制避免撐爆 */
@@ -82,4 +82,34 @@ html, body {
   overflow-x: hidden;
 }
 
+/* 英文內文字體 Inter Regular */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* 英文標題字體 Poppins SemiBold */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* 中文內文字體 思源黑體 Regular */
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('/fonts/NotoSansTC-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 中文標題字體 思源黑體 Heavy */
+@font-face {
+  font-family: 'NotoSansTC';
+  src: url('/fonts/NotoSansTC-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
